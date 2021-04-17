@@ -79,14 +79,12 @@ ul{
 /* HEADER */
 header{
     width: 100%;
-    /* height: 600px; 1024px */
-    height: 500px;
+    height: 600px;
     background: #000046;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(214, 78%, 49%, 0.281), hsla(240, 100%, 14%, 0.432));
     background: linear-gradient(to right, hsla(214, 78%, 49%, 0.281), hsla(240, 100%, 14%, 0.432)), url(./img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center; 1024px */
     background-position: right;
     background-attachment: fixed;
     position: relative;
@@ -137,21 +135,19 @@ header{
 
 .text-header{
     width: 100%;
-    /* height: 350px; 1024px */
-    height: 255px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #f2f2f2;
-    /*font-size: 25px;    1024px */
     font-size: 18px;
 }
 
 
 /* SOBRE MI */
 
-#sobre-mi{ /* NO EN 1024PX */
+#sobre-mi{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -160,41 +156,34 @@ header{
 
 .about-me{
     display: flex;
-    margin-bottom: 40px;
 }
 
 .about-me img{
-    /* width: 46%; 1024px */
     width: 100%;
     height: 300px;
 }
 
 .about-me div{
-    /* width: 46%; 1024px */
     width: 100%;
 }
 
 .about-me div h2{
-    /* padding: 40px 20px 20px 20px; 1024px */
     padding: 0 20px 20px 20px;
 }
 
 .about-me div p{
-    /* padding-left: 20px;
-    text-align: center; 1024px */
-
     padding: 0 20px 20px;
 }
 
 .curvas{ /* En 1024px no */
     position: relative;
-    top: -1px;
+    top: -5px;
 }
 
 
 /* CONOCIMIENTOS */
 #conocimientos{
-    background: #000046;  /* fallback for old browsers */
+    background: #000046;
     background: -webkit-linear-gradient(to right, hsla(214, 78%, 49%, 0.281), hsla(240, 100%, 14%, 0.432));
     background: linear-gradient(to right, hsla(214, 78%, 49%, 0.281), hsla(240, 100%, 14%, 0.432)), url(./img/placeimg_640_480_tech.jpg);
     background-size: cover;
@@ -221,20 +210,16 @@ header{
     width: 80%;
     height: auto;
     background: #fff;
-    /* display: flex; 1024px */
     margin: 0 auto;
-    /* padding: 0px 0 0 10px; 1024px */
     align-items: center;
     margin-bottom: 20px;
 }
 
 .cont-conocimientos:nth-child(2){
-    /* padding: 0px 10px 0 0; 1024px */
     padding: 0;
 }
 
 .cont-conocimientos:nth-child(1), .cont-conocimientos:nth-child(3){
-    /* flex-flow: row-reverse; 1024px */
     flex-flow: column;
 }
 
@@ -258,7 +243,6 @@ header{
 .div-conocimientos{
     width: auto;
     margin: 0 auto;
-    /* SOLO 3N MOVIL */
     padding: 15px 0;
     font-family: cursive;
 }
@@ -274,14 +258,12 @@ header{
 }
 
 .img-conocimientos{
-    /* width: 30%; 1024px */
     width: 100%;
     height: 80px;
     position: relative;
 }
 
 .img-conocimientos-control-versiones{
-    /* width: 40%; 1024px */
     width: 100%;
 }
 
@@ -296,4 +278,107 @@ header{
     width: 100%;
     height: 600px;
     background: #fff;
+}
+
+
+@media(min-width: 768px){
+    /* HEADER */
+    .text-header{
+        font-size: 25px;
+    }
+    
+    /* ABOUT ME */
+    #sobre-mi{
+        flex-direction: row;
+    }
+
+    /* CONOCIMIENTOS */
+    .cont-conocimientos{
+        display: flex;
+    }
+
+    .cont-conocimientos:nth-child(2){
+        padding: 0px 10px 0 0;
+    }
+
+    .cont-conocimientos:nth-child(1), .cont-conocimientos:nth-child(3){
+        flex-flow: row-reverse;
+    }
+
+    .img-conocimientos{
+        width: 40%;
+        height: 100px;
+    }
+    
+    .img-conocimientos-control-versiones{
+        width: 40%;
+    }
+}
+
+@media(min-width: 1024px){
+    /* SOBRE MI */
+    .about-me img{
+        width: 46%;
+    }
+    
+    .about-me div{
+        width: 46%;
+    }
+
+    /* CONOCIMIENTOS */
+    .cont-conocimientos{
+        padding: 0px 0 0 10px;
+    }
+}
+
+@media(min-width: 1200px){
+    /* HEADER */
+    .nav {
+        font-size: 19px;
+    }
+
+    /* SOBRE MI */
+    #sobre-mi{
+        width: 1085px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .about-me {
+        margin-bottom: 30px;
+    }
+
+    .about-me img {
+        width: 50%;
+        height: 350px;
+    }
+}
+
+@media(min-width: 1300px){
+    /* CONOCIMIENTOS */
+    .img-conocimientos {
+        width: 410px;
+    }
+
+    .img-conocimientos-control-versiones {
+        width: 410px;
+    }
+}
+
+@media(min-width: 1400px){
+    .nav {
+        font-size: 21px;
+    }
+
+    .about-me div {
+        font-size: 19px;
+    }
+
+    .cont-conocimientos {
+        width: 1120px;
+    }
+
+    .cont-conocimientos:nth-child(2) {
+        padding: 0;
+    }
 }
