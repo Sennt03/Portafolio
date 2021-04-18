@@ -93,9 +93,99 @@
 
             </div>
         </section>
-        <section id="proyectos">
 
+        <!-- MODAL PROYECTOS -->
+        <input type="checkbox" id="btn-modal">
+        <label for="btn-modal" class="lbl-modal">Añadir</label>
+        <div class="modal">
+            <div class="contenedor-modal">
+                <img id="img-modal" src="file:///C:/Users/David/Practicas/00.Dise%C3%B1os/Guiadas/01.CSS/img/img1.jpg">
+                <label for="btn-modal"><i class="fas fa-times"></i></label>
+                <a id="github-modal" href="#"><i class="fab fa-github"></i></a>
+                <a id="link-modal" href="#" class="link-2"><i class="fas fa-link"></i></a>
+                <div class="contenido" id="contenido-del-modal">
+                    <h4 id="nombre-modal"></h4>
+                    <h5 id="tecnologias-modal"></h5>
+                    <p id="descripcion-modal"></p>
+                </div>
+            </div>
+        </div>
+
+        <section id="proyectos">
+            <h2 class="title">Proyectos</h2>
+            <div class="galeria-port">
+                <div class="imagen-port">
+                    <input class="input-hover" type="checkbox" name="1" id="1">
+                    <label for="1" class="abrir"><i class="fas fa-external-link-alt"></i></label>
+                    <img src="./img/img1.jpg">
+                    <div class="text-proyectos">
+                        <h3>Senntcloud</h3>
+                        <h5>Mean Stack</h5>
+                    </div>
+                    <div class="hover-galeria">
+                        <div class="modal-proyecto">
+                            <label class="cerrar" for="1"><i class="fas fa-times"></i></label>
+                            <a href="https://senntcloud.herokuapp.com"><i class="fas fa-link"></i>  Link</a>
+                            <p _id="1" class="detalles">Detalles</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="imagen-port">
+                    <input class="input-hover" type="checkbox" name="2" id="2">
+                    <label for="2" class="abrir"><i class="fas fa-external-link-alt"></i></label>
+                    <img src="./img/img1.jpg">
+                    <div class="text-proyectos">
+                        <h3>SenntShop</h3>
+                        <h5>NodeJS - MySql</h5>
+                    </div>
+                    <div class="hover-galeria">
+                        <div class="modal-proyecto">
+                            <label class="cerrar" for="2"><i class="fas fa-times"></i></label>
+                            <a href="https://senntshop.herokuapp.com"><i class="fas fa-link"></i>  Link</a>
+                            <p _id="2" class="detalles">Detalles</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="imagen-port">
+                    <input class="input-hover" type="checkbox" name="3" id="3">
+                    <label for="3" class="abrir"><i class="fas fa-external-link-alt"></i></label>
+                    <img src="./img/img1.jpg">
+                    <div class="text-proyectos">
+                        <h3>Sennt IO</h3>
+                        <h5>Mean Stack</h5>
+                    </div>
+                    <div class="hover-galeria">
+                        <div class="modal-proyecto">
+                            <label class="cerrar" for="3"><i class="fas fa-times"></i></label>
+                            <a href="https://sennt-io.herokuapp.com"><i class="fas fa-link"></i>  Link</a>
+                            <p _id="3" class="detalles">Detalles</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="imagen-port">
+                    <input class="input-hover" type="checkbox" name="4" id="4">
+                    <label for="4" class="abrir"><i class="fas fa-external-link-alt"></i></label>
+                    <img src="./img/img1.jpg">
+                    <div class="text-proyectos">
+                        <h3>Landing Page</h3>
+                        <h5>Html5 - Css3</h5>
+                    </div>
+                    <div class="hover-galeria">
+                        <div class="modal-proyecto">
+                            <label class="cerrar" for="4"><i class="fas fa-times"></i></label>
+                            <a href="https://Sennt03.github.io/Css-Landing-Page"><i class="fas fa-link"></i>  Link</a>
+                            <p _id="4" class="detalles">Detalles</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>

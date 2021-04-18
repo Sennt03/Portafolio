@@ -275,11 +275,195 @@ header{
 
 /* PROYECTOS */
 #proyectos{
-    width: 100%;
-    height: 600px;
+    width: 80%;
+    margin: 0 auto;
     background: #fff;
 }
 
+#proyectos > h2{
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+}
+
+.imagen-port{
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-port .abrir{
+    position: absolute;
+    background: hsl(273deg 91% 27% / 50%);
+    color: #fff;
+    padding: 5px;
+    border-radius: 0 0 5px;
+    cursor: pointer;
+}
+
+.imagen-port .text-proyectos{
+    font-family: Helvetica;
+    text-align: center;
+    padding: 10px;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.input-hover{
+    display: none;
+}
+
+.input-hover:checked ~ .hover-galeria{
+    transform: scale(1);
+}
+
+.modal-proyecto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica;
+    color: #fff;
+    position: relative;
+}
+
+.modal-proyecto > a, .modal-proyecto > p, .modal-proyecto > label{
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: #00000057;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-proyecto > a i{
+    margin-right: 3px;
+}
+
+.modal-proyecto > .cerrar{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* MODAL */
+.modal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-modal:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-modal{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+}
+
+#btn-modal:checked ~ .modal .contenedor-modal{
+    transform: translateY(0);
+}
+
+.contenedor-modal label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contenedor-modal label i, .contenedor-modal > a{
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    background: hsla(273, 91%, 27%, 0.7);;
+    padding: 3px 5px;
+}
+
+.contenedor-modal > a{
+    position: absolute;
+    top: 40px;
+    right: 7px;
+}
+
+.contenedor-modal > a.link-2{
+    top: 73px;
+}
+
+.contenedor-modal > img{
+    width: 100%;
+    height: 200px;
+}
+
+#btn-modal{
+    display: none;
+}
+
+.lbl-modal{
+    background: #e69706;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    display: none;
+}
+
+.contenido{
+    font-family: Helvetica;
+    padding: 30px;
+    margin-top: 5px;
+}
 
 @media(min-width: 768px){
     /* HEADER */
@@ -313,6 +497,14 @@ header{
     .img-conocimientos-control-versiones{
         width: 40%;
     }
+
+    /* PROYECTOS */
+    .galeria-port{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
 }
 
 @media(min-width: 1024px){
@@ -329,6 +521,12 @@ header{
     .cont-conocimientos{
         padding: 0px 0 0 10px;
     }
+
+    /* PROYECTOS */
+    .galeria-port{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 @media(min-width: 1200px){
@@ -352,6 +550,7 @@ header{
         width: 50%;
         height: 350px;
     }
+
 }
 
 @media(min-width: 1300px){
@@ -366,6 +565,7 @@ header{
 }
 
 @media(min-width: 1400px){
+
     .nav {
         font-size: 21px;
     }
@@ -380,5 +580,16 @@ header{
 
     .cont-conocimientos:nth-child(2) {
         padding: 0;
+    }
+
+    #proyectos{
+        width: 1120px;
+    }
+}
+
+@media(min-width: 1440px){
+    body{
+        width: 1440px;
+        margin: 0 auto;
     }
 }
