@@ -277,6 +277,7 @@ header{
 #proyectos{
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 40px;
     background: #fff;
 }
 
@@ -465,6 +466,57 @@ header{
     margin-top: 5px;
 }
 
+
+/* CONTACTO */
+#contacto{
+    background: #121146;
+    color: #fff;
+    padding: 45px 30px 30px 30px;
+    font-family: Helvetica;
+}
+
+#contacto > h3{
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+#contacto .text-footer .section-footer{
+    margin-bottom: 10px;
+}
+
+#contacto .text-footer .section-footer > p{
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+}
+
+#contacto .text-footer .section-footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacto .text-footer .section-footer #iEmail{
+    background: #9e9e9e;
+    color: #fff;
+    padding: 4px 15px;
+}
+
+#contacto .text-footer .section-footer #iNumero{
+    padding: 4px 16px;
+    background: #00a700;
+    color: #fff;
+}
+
+#contacto .text-footer .section-footer #iGithub{
+    padding: 4px 15px;
+    background: #000;
+    color: #fff;
+}
+
 @media(min-width: 768px){
     /* HEADER */
     .text-header{
@@ -505,6 +557,21 @@ header{
         column-gap: 20px;
     }
 
+
+    /* CONTACTO */
+    #contacto .text-footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #contacto .text-footer .section-footer div{
+        display: block;
+    }
+    
+    #contacto .text-footer .section-footer div > p{
+        margin-bottom: 10px;
+    }
+
 }
 
 @media(min-width: 1024px){
@@ -525,6 +592,21 @@ header{
     /* PROYECTOS */
     .galeria-port{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CONTACTO */
+    #contacto .text-footer .section-footer {
+        display: flex;
+    }
+
+    #contacto .text-footer .section-footer > p {
+        border: none;
+        padding: none;
+        margin: none;
+        padding-right: 15px;
+        margin-right: 16px;
+        border-right: 1px solid #fff;
+        width: fit-content;
     }
 
 }
@@ -549,6 +631,12 @@ header{
     .about-me img {
         width: 50%;
         height: 350px;
+    }
+
+    #contacto .text-footer {
+        justify-content: space-evenly;
+        width: 800px;
+        margin: 0 auto;
     }
 
 }
