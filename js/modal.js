@@ -30,7 +30,7 @@ const descripcion4 = 'Landing page simple con css flexbox y css grid'
 
 const img5 = './img/senntblog.jpg'
 const github5 = githubLink + 'DJango-Blog'
-const link5 = 'https://github.com/Sennt03/DJango-Blog'
+const link5 = 'https://senntblog.herokuapp.com/'
 const nombre5 = 'SenntBlog'
 const tecnologias5 = 'DJango - MySQL'
 const descripcion5 = 'CRUD completo con DJango y el ORM junto a mysql. Puedes registrarte, crear categorias, crear entradas, editarlas, eliminarlas. Tambien filtar las entradas por categorias y por usuarios'
