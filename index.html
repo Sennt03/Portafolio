@@ -68,9 +68,10 @@
                     <div class="div-conocimientos">
                         <ul>
                             <li class="green"><i class="fab fa-node-js"></i> NodeJS</li>
-                            <li class="gray"><i class="fas fa-database"></i> BD SQL</li>
-                            <li class="gray"><i class="fas fa-database"></i> MySql</li>
                             <li class="gray"><i class="fas fa-database"></i> MongoDB</li>
+                            <li class="php"><i class="fab fa-php"></i> PHP</li>
+                            <li class="laravel"><i class="fab fa-laravel"></i> Laravel</li>
+                            <li class="gray"><i class="fas fa-database"></i> MySql</li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +98,7 @@
         <label for="btn-modal" class="lbl-modal">Añadir</label>
         <div class="modal">
             <div class="contenedor-modal">
-                <img id="img-modal" src="file:///C:/Users/David/Practicas/00.Dise%C3%B1os/Guiadas/01.CSS/img/img1.jpg">
+                <img id="img-modal" src="">
                 <label for="btn-modal"><i class="fas fa-times"></i></label>
                 <a target="blank" id="github-modal" href="#"><i class="fab fa-github"></i></a>
                 <a target="blank" id="link-modal" href="#" class="link-2"><i class="fas fa-link"></i></a>
@@ -117,7 +118,7 @@
                     <label for="5" class="abrir"><i class="fas fa-external-link-alt"></i></label>
                     <img src="./img/senntblog.jpg">
                     <div class="text-proyectos">
-                        <h3>Senntmessages</h3>
+                        <h3>SenntMessages</h3>
                         <h5>Angular, NodeJS y Socket.io</h5>
                     </div>
                     <div class="hover-galeria">
@@ -134,8 +135,8 @@
                     <label for="1" class="abrir"><i class="fas fa-external-link-alt"></i></label>
                     <img src="./img/senntcloud.jpg">
                     <div class="text-proyectos">
-                        <h3>Senntcloud</h3>
-                        <h5>Angular y NodeJS</h5>
+                        <h3>SenntCloud</h3>
+                        <h5>Angular, NodeJS y MongoDB</h5>
                     </div>
                     <div class="hover-galeria">
                         <div class="modal-proyecto">
@@ -169,7 +170,7 @@
                     <img src="./img/senntio.jpg">
                     <div class="text-proyectos">
                         <h3>Sennt IO</h3>
-                        <h5>Angular y NodeJS</h5>
+                        <h5>Angular, NodeJS y MongoDB</h5>
                     </div>
                     <div class="hover-galeria">
                         <div class="modal-proyecto">
@@ -180,7 +181,7 @@
                     </div>
                 </div>
                 
-                <div class="imagen-port">
+                <!-- <div class="imagen-port">
                     <input class="input-hover" type="checkbox" name="4" id="4">
                     <label for="4" class="abrir"><i class="fas fa-external-link-alt"></i></label>
                     <img src="./img/landingpage.jpg">
@@ -195,7 +196,7 @@
                             <p _id="4" class="detalles">Detalles</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </section>
@@ -225,9 +226,12 @@
                 </div>
             </div>
         </div>
-        <h3>David Ruiz &copy; 2022</h3>
+        <h3 id="copy">David Ruiz</h3>
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script>
+        document.getElementById('copy').innerHTML = `David Ruiz &copy; ${new Date().getFullYear()}`
+    </script>
 </body>
 </html>

@@ -46,6 +46,14 @@ ul{
     color: #00c1ff;
 }
 
+.php{
+    color: #7377ad;
+}
+
+.laravel{
+    color: #eb4d43;
+}
+
 .gray{
     color: #696767;
 }
@@ -554,6 +562,11 @@ header{
         width: 40%;
     }
 
+    .div-conocimientos li{
+        font-size: 18px;
+    }
+    
+
     /* PROYECTOS */
     .galeria-port{
         display: grid;
@@ -591,6 +604,10 @@ header{
     /* CONOCIMIENTOS */
     .cont-conocimientos{
         padding: 0px 0 0 10px;
+    }
+
+    .div-conocimientos li{
+        font-size: 19px;
     }
 
     /* PROYECTOS */
