@@ -1,8 +1,9 @@
 const githubLink = 'https://github.com/Sennt03/'
 
 const img1 = './img/senntcloud.jpg'
-const github1 = githubLink + 'Angular-Node-Nube-Online'
+// const github1 = githubLink + 'Angular-Node-Nube-Online'
 // const link1 = 'https://cloud.davidruiz.online'
+const github1 = githubLink + 'sennt-cloud-migracion'
 const link1 = 'https://social.davidruiz.online'
 const nombre1 = 'SenntCloud'
 const tecnologias1 = 'Angular, NodeJS y MongoDB'
