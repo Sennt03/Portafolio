@@ -1,254 +1,493 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Ruiz</title>
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#17225A">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>David Ruiz</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!--FONT AWESOMW-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    
-    <!-- STYLES -->
-    <link rel="stylesheet" href="./style.css">
-</head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
 <body>
-    <header id="inicio">
-        <nav class="nav">
-            <h2>David Ruiz</h2>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Abrir navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">Inicio</a></li>
+                        <li><a href="#video">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos freelance</a></li>
+                        <li><a href="#featured">Proyectos personales</a></li>
+                        <li><a href="#blog">Experiencia laboral</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">David <em>Ruiz</em></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#video">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Proyectos freelance
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#featured">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Proyectos personales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Experiencia laboral
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/david-ruiz-a527a01bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Sennt03" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="mailto:davidrsmk144@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://wa.me/593992959886" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
             </ul>
-        </nav>
-        <section class="text-header">
-            <h2>No importa lo que imagines</h2>
-            <h3>Todo es posible</h3>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
-    </header>
-    <main>
-        <section id="sobre-mi" class="about-me">
-            <img src="./img/about-me.png" alt="David Ruiz sobre mi">
-            <div>
-                <h2 class="title">Sobre mi</h2>
-                <p>Soy David Ruiz vivo en Quito - Ecuador, empecé a programar desde los 15 años y un poco
-                    más adelante empecé en el desarrollo web estudiando en varias academias virtuales y
-                    realizando proyectos para mejorar, también siendo autodidacta y para cada tecnología
-                    nueva, leyendo la documentación.
-                    Me gusta mucho siempre estar actualizado con las nuevas tecnologías por lo que una
-                    frase que me gusta y la pienso seguir es: "Nunca pares de aprender" y a mí me apasiona
-                    aprender.
-                    </p>
-            </div>
-        </section>
-        <section id="conocimientos">
-            <div style="height: 150px; overflow: hidden;" class="curvas"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
-            <h2 class="title">Mis conocimientos</h2>
-            <div class="mis-conocimientos">
-                <div class="cont-conocimientos frontend">
-                    <div class="img-conocimientos">
-                        <img src="./img/frontend.jpg" alt="Conocimientos david ruiz">
-                        <h2 id="mis-conocimientos" class="title red"><i class="fas fa-code"></i> Frontend</h2>
-                    </div>
-                    <div class="div-conocimientos">
-                        <ul>
-                            <li class="orange"><i class="fab fa-html5"></i> Html5</li>
-                            <li class="blue"><i class="fab fa-css3-alt"></i> Css3</li>
-                            <li class="purple"><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                            <li><i class="fab fa-js-square yellow"></i> JavaScript</li>
-                            <li class="red"><i class="fab fa-angular"></i> Angular +16</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="cont-conocimientos backend">
-                    <div class="img-conocimientos">
-                        <img src="./img/backend.jpg" alt="conocimientos david">
-                        <h2 class="title green"><i class="fas fa-terminal"></i> Backend</h2>
-                    </div>
-                    <div class="div-conocimientos">
-                        <ul>
-                            <li class="green"><i class="fab fa-node-js"></i> NodeJS</li>
-                            <li class="gray"><i class="fas fa-database"></i> MongoDB</li>
-                            <li class="php"><i class="fab fa-php"></i> PHP</li>
-                            <li class="laravel"><i class="fab fa-laravel"></i> Laravel</li>
-                            <li class="gray"><i class="fas fa-database"></i> MySql</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="cont-conocimientos control-de-versiones">
-                    <div class="img-conocimientos img-conocimientos-control-versiones">
-                        <img src="./img/terminal.jpg" alt="conocimientos david ruiz">
-                        <h2 class="title orange"><i class="fas fa-code-branch"></i> Control de versiones</h2>
-                    </div>
-                    <div class="div-conocimientos">
-                        <ul>
-                            <li class="orange"><i class="fab fa-git-alt"></i> Git</li>
-                            <li><i class="fab fa-github"></i> Github</li>
-                            <li class="gray"><i class="fas fa-terminal"></i> Terminal</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="wave bmenos" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
-
-            </div>
-        </section>
-
-        <!-- MODAL PROYECTOS -->
-        <input type="checkbox" id="btn-modal">
-        <label for="btn-modal" class="lbl-modal">Añadir</label>
-        <div class="modal">
-            <div class="contenedor-modal">
-                <img id="img-modal" src="">
-                <label for="btn-modal"><i class="fas fa-times"></i></label>
-                <a target="blank" id="github-modal" href="#"><i class="fab fa-github"></i></a>
-                <a target="blank" id="link-modal" href="#" class="link-2"><i class="fas fa-link"></i></a>
-                <div class="contenido" id="contenido-del-modal">
-                    <h4 id="nombre-modal"></h4>
-                    <h5 id="tecnologias-modal"></h5>
-                    <p id="descripcion-modal"></p>
-                </div>
-            </div>
         </div>
 
-        <section id="proyectos">
-            <h2 class="title">Proyectos</h2>
-
-            <div class="text">
-                <p>Todos mis proyectos estan subidos en mi servidor de AWS con su respectivo subdominio (messages, cloud, shop y social).</p>
-                <!-- <p>Mi proyecto más completo y donde se pueden ver reflejados mis conocimientos actuales es <strong><a href="https://messages.davidruiz.site" target="_blank">SenntMessages</a></strong></p> -->
-                <p>Mi proyecto más completo y donde se pueden ver reflejados mis conocimientos actuales es <strong><a href="https://messages.davidruiz.site" target="_blank">SenntMessages</a></strong></p>
-            </div>
-            
-            <div class="galeria-port">
-                <div class="imagen-port">
-                    <input class="input-hover" type="checkbox" name="1" id="1">
-                    <label for="1" class="abrir"><i class="fas fa-external-link-alt"></i></label>
-                    <img src="./img/senntcloud.jpg">
-                    <div class="text-proyectos">
-                        <h3>SenntCloud</h3>
-                        <h5>Angular, NodeJS y MongoDB</h5>
-                    </div>
-                    <div class="hover-galeria">
-                        <div class="modal-proyecto">
-                            <label class="cerrar" for="1"><i class="fas fa-times"></i></label>
-                            <!-- <a target="blank" href="https://cloud.davidruiz.site"><i class="fas fa-link"></i>  Link</a> -->
-                            <a target="blank" href="https://social.davidruiz.site"><i class="fas fa-link"></i>  Link</a>
-                            <p _id="1" class="detalles">Detalles</p>
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                          <h1>David Ruiz<br>Desarrollador Web</h1>
+                          <p>No importa lo que imagines <b>todo es posible</b></p>
+                          <div class="white-button button">
+                              <a href="#video">Conoce sobre mí</a>
+                          </div>
+                        </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="imagen-port">
-                    <input class="input-hover" type="checkbox" name="5" id="5">
-                    <label for="5" class="abrir"><i class="fas fa-external-link-alt"></i></label>
-                    <img src="./img/senntmessages.jpg">
-                    <div class="text-proyectos">
-                        <h3>SenntMessages</h3>
-                        <h5>Angular, NodeJS y Socket.io</h5>
-                    </div>
-                    <div class="hover-galeria">
-                        <div class="modal-proyecto">
-                            <label class="cerrar" for="5"><i class="fas fa-times"></i></label>
-                            <a target="blank" href="https://messages.davidruiz.site"><i class="fas fa-link"></i>  Link</a>
-                            <p _id="5" class="detalles">Detalles</p>
+                <!-- // Item -->
+                <!-- Item -->
+                <!-- <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Please tell <br>your friends</h1>
+                          <p>Support templatemo by sharing a link to your friends.
+							<br>Thank you for helping us.</p>
+                          
+                          <div class="white-button button">
+                              <a href="#featured">Share More</a>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="imagen-port">
-                    <input class="input-hover" type="checkbox" name="2" id="2">
-                    <label for="2" class="abrir"><i class="fas fa-external-link-alt"></i></label>
-                    <img src="./img/senntshop.jpg">
-                    <div class="text-proyectos">
-                        <h3>SenntShop</h3>
-                        <h5>NodeJS - MySql</h5>
-                    </div>
-                    <div class="hover-galeria">
-                        <div class="modal-proyecto">
-                            <label class="cerrar" for="2"><i class="fas fa-times"></i></label>
-                            <a target="blank" href="https://shop.davidruiz.site"><i class="fas fa-link"></i>  Link</a>
-                            <p _id="2" class="detalles">Detalles</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- <div class="imagen-port">
-                    <input class="input-hover" type="checkbox" name="3" id="3">
-                    <label for="3" class="abrir"><i class="fas fa-external-link-alt"></i></label>
-                    <img src="./img/senntio.jpg">
-                    <div class="text-proyectos">
-                        <h3>Sennt IO</h3>
-                        <h5>Angular, NodeJS y MongoDB</h5>
-                    </div>
-                    <div class="hover-galeria">
-                        <div class="modal-proyecto">
-                            <label class="cerrar" for="3"><i class="fas fa-times"></i></label>
-                            <a target="blank" href="https://social.davidruiz.site"><i class="fas fa-link"></i>  Link</a>
-                            <p _id="3" class="detalles">Detalles</p>
                         </div>
                     </div>
                 </div> -->
-                
-                <!-- <div class="imagen-port">
-                    <input class="input-hover" type="checkbox" name="4" id="4">
-                    <label for="4" class="abrir"><i class="fas fa-external-link-alt"></i></label>
-                    <img src="./img/landingpage.jpg">
-                    <div class="text-proyectos">
-                        <h3>Landing Page</h3>
-                        <h5>Html5 - Css3</h5>
-                    </div>
-                    <div class="hover-galeria">
-                        <div class="modal-proyecto">
-                            <label class="cerrar" for="4"><i class="fas fa-times"></i></label>
-                            <a target="blank" href="https://Sennt03.github.io/Css-Landing-Page"><i class="fas fa-link"></i>  Link</a>
-                            <p _id="4" class="detalles">Detalles</p>
+                <!-- // Item -->
+                <!-- Item -->
+                <!-- <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Suspendisse suscipit<br>nulla sed</h1>
+                          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices <br>posuere cubilia Curae; Sed at massa turpis.</p>
+                          
+                          <div class="white-button button">
+                              <a href="#featured">Learn More</a>
+                          </div>
+                        </div>
                         </div>
                     </div>
                 </div> -->
-
-            </div>
-        </section>
-    </main>
-
-    <footer id="contacto">
-        <div class="text-footer">
-            <div class="section-footer">
-                <p>Email</p>
-                <div>
-                    <p>davidrsmk144@gmail.com</p>
-                    <a href="mailto:davidrsmk144@gmail.com" target="blank"><i id="iEmail" class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="section-footer">
-                <p>Numero</p>
-                <div>
-                    <p>+593 992959886</p>
-                    <a href="https://api.whatsapp.com/send?phone=593992959886" target="blank"><i id="iNumero" class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="section-footer">
-                <p>Github</p>
-                <div>
-                    <p>Sennt03</p>
-                    <a href="https://github.com/Sennt03" target="blank"><i id="iGithub" class="fab fa-github"></i></a>
-                </div>
+                <!-- // Item -->
             </div>
         </div>
-        <h3 id="copy">David Ruiz</h3>
-    </footer>
 
-    <script src="./js/modal.js"></script>
+
+        <div class="page-content">
+            <section id="video" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h1>Sobre <em>mí</em></h1>
+                            <p>Desarrollador Fullstack especializado en Frontend con Angular +17 y Backend con NodeJS y PHP</p>
+                        </div>
+                        <div class="text-content">
+                            <p style="text-align: justify;font-size: 15px;">A lo largo de mi experiencia profesional y realizando proyectos completos, cuento con sólidos conocimientos en las tecnologías: <b>HTML, CSS, Sass, JavaScript, Angular, React, NodeJS, PHP, Laravel, MySQL y MongoDB</b>, entre otras. 
+                            <br> Domino <b>GIT</b> y <b>GitHub</b>, lo que me permite gestionar de manera eficiente el control de versiones, y cuento con experiencia en despliegues en <b>AWS EC2</b>. <br>
+                            Todas mis aplicaciones estan desplegadas en mi propio servidor de AWS, configuradas con Nginx y PM2.</p>
+                        </div>
+                        <div class="accent-button button">
+                            <a href="./cv/cv david ruiz.pdf" target="_blank" download>Descarga CV</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-12">
+                        <div class="box-video">
+                            <div class="bg-video" style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                                <div class="bt-play">Play</div>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="100%" height="520" src="https://www.youtube.com/embed/j-_7Ub-Zkow?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>Proyectos<br><em>Freelance</em></h1>
+                    <p>Este es mi proyecto freelance mas reciente,
+                    <br>una aplicación a medida para una organización de artes marciales.
+                    <br><b><a href="https://eflecuador.com" target="_blank">www.eflecuador.com</a></b></p>
+                </div>
+                <div class="section-content">
+                    <p style="text-align: justify;font-size: 15px;">
+                        <b>Tecnologías del desarrollo: Angular 18, NodeJS y MongoDB</b><br>
+                        La aplicación se divide en dos partes: una <b>página web</b> y un <b>panel de administración</b>. <br>
+                        <b>La página web</b> muestra todas las escuelas registradas, incluyendo imágenes, videos y perfiles de sus integrantes. Cada perfil contiene datos como peso, récord, peleas, escuela a la que pertenece, etc. También cuenta con secciones de eventos y rankings de peleadores.
+                        <br>
+                        <b>El panel de administración</b> permite a los administradores gestionar toda la información que se muestra en la página web, desde crear usuarios, gestionar escuelas, registrar peleadores, crear eventos, etc. Los eventos creados se reflejan automáticamente en la web, donde los dueños de escuelas pueden inscribir sus peleadores. Una vez registrado todos los peleadores, <b>el sistema genera todas las peleas</b> según la categoría y características de cada peleador. Se registran los resultados de cada pelea y tras finalizar un evento, los récords de los peleadores se actualizan automáticamente.<br>
+                        <b><a target="_blank" href="https://wa.me/593997058091">Referencia: Jefferson Cuasapaz (Co-dueño de EFL Ecuador) - 0997058091 <i class="fa fa-whatsapp"></i></a></b>
+                        </p>
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="./img/efl/home.jpg" data-lightbox="image"><img src="./img/efl/home.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="./img/efl/schools.jpg" data-lightbox="image"><img src="./img/efl/schools.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="./img/efl/login.png" data-lightbox="image"><img src="./img/efl/login.png" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="./img/efl/fighters.jpg" data-lightbox="image"><img style="max-width: 280px;" src="./img/efl/fighters.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="./img/efl/admin.jpg" data-lightbox="image"><img src="./img/efl/admin.jpg" alt="image 5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section id="featured" class="content-section">
+                <div class="section-heading">
+                    <h1>Proyectos<br><em>Personales</em></h1>
+                    <p>Constantemente realizo proyectos personales enfocados al ámbito laboral para seguir desarrollando mis habilidades y conocimientos.</p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <a href="img/proyectos/cloud.png" data-lightbox="image"><img src="img/proyectos/cloud.png" alt="Sennt cloud"></a>
+                                <div class="featured-button button">
+                                    <a href="img/proyectos/cloud.png" data-lightbox="image">Ver</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>
+                                    <span>Sennt<b>Cloud</b> - </span>
+                                    <div class="icons">
+                                        <a href="https://social.davidruiz.online" target="_blank">Link: <i class="fa fa-link"></i></a>
+                                        <a href="https://github.com/Sennt03/Angular-Node-Nube-Online" target="_blank"><i class="fa fa-github"></i></a>
+                                    </div>
+                                </h4>
+                                <span>Nube online - Clon google drive</span>
+                                <span>- Tecnologías: Angular, NodeJS y MongoDB</span>
+                                <p><b>Sistema de nube online</b> donde puedes subir tu archivos, imagenes, videos, crear carpetas, renombrar, mover, copiar, etc. 
+                                <br>Y desde cualquier dispositivo solo iniciándo sesión puedes descargarlos.
+                                <br>Tambien puedes ver el espacio usado e información de tus archivos, cambiar el modo de vista, buscar por carpetas o archivos, etc.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <a href="img/proyectos/messages.png" data-lightbox="image"><img src="img/proyectos/messages.png" alt=""></a>
+                                <div class="featured-button button">
+                                    <a href="img/proyectos/messages.png" data-lightbox="image">Ver</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>
+                                    <span>Sennt<b>Messages</b> - </span>
+                                    <div class="icons">
+                                        <a href="https://messages.davidruiz.online" target="_blank">Link: <i class="fa fa-link"></i></a>
+                                        <a href="https://github.com/Sennt03/Angular-Node-SenntMessages" target="_blank"><i class="fa fa-github"></i></a>
+                                    </div>
+                                </h4>
+                                <span>App Mensajería - Clon whatsapp</span>
+                                <span>- Tecnologías: Angular, NodeJS, MondogDB y Socket.io</span>
+                                <p><b>App de chat en tiempo real con socket.io</b><br>Contiene creación de chats, configuración de perfil, buscador de usuarios. En cada chat tienes el envío de mensajes, envío de audios, ubicación, archivos e imágenes. Puedes bloquear usuarios, configurar tu foto de perfil, etc.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <a href="img/proyectos/shop.png" data-lightbox="image"><img src="img/proyectos/shop.png" alt=""></a>
+                                <div class="featured-button button">
+                                    <a href="img/proyectos/shop.png" data-lightbox="image">Ver</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>
+                                    <span>Sennt<b>Shop</b> - </span>
+                                    <div class="icons">
+                                        <a href="https://shop.davidruiz.online" target="_blank">Link: <i class="fa fa-link"></i></a>
+                                        <a href="https://github.com/Sennt03/NodeJS-Sistema-Tienda-Online" target="_blank"><i class="fa fa-github"></i></a>
+                                    </div>
+                                </h4>
+                                <span>Tienda online</span>
+                                <span>- Tecnologías: NodeJS y MySQL</span>
+                                <p><b>Sistema de tienda online</b> con NodeJS, javascript moderno y subida de imagenes a cloudinary.
+                                <br>En la administración puedes crear productos, gestionar categorías y administrar pedidos, entre otras funciones. En la página web, los usuarios pueden ver los productos, agregarlos al carrito y realizar su pedido, etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="blog" class="content-section">
+                <div class="section-heading">
+                    <h1>Experiencia<br><em>Laboral</em></h1>
+                    <p>Además de trabajar como freelancer y desarrollar proyectos personales, tengo experiencia profesional trabajando con empresas.</p>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                              <li><a href="#tab1" class="active">Urbano Express</a></li>
+                              <li><a href="#tab2">Geeks Ecuador</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/urbano.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Urbano Express</h4>
+                                                    <h4>Analista de Desarrollo</h4>
+                                                    <span>Febrero 2023 - Actual</span>
+                                                    <p>En Urbano Express trabajo principalmente con <b>Javascript, PHP, Laravel, Angular y Python.</b>
+                                                    <br>Realizo correcciones, mantenimiento, migración y creación de nuevos módulos de sus sitemas, por ejemplo en la aplicación de <b>PHP</b> y <b>Laravel</b> se realizo la migración completa del sistema, en los sistemas de <b>Javascript</b> y <b>Angular</b> realizo módulos completos, por ejemplo módulos de facturación, dashboards de estadísticas, módulos para visualizar el tracking de paquetes, etc. Realizo módulos de todo tipo para cualquier proceso que requieran, desde un CRUD para manipular información hasta sistemas complejos como toda la manipulación de Stock Nacional, todo el sistema de facturación por servicio, las validaciones de seguridad en sus sitemas, etc. También realizo servicios para su aplicación movil o para crones que ejecuta la base de datos, reportes de excel y generación de labels con <b>Python</b>, etc.  
+                                                    <br><b>En resumen</b> realizo todo requerimiento que solicite el área de procesos sobre las aplicaciones web.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <!-- <img src="img/blog_2.jpg" alt=""> -->
+                                                <div class="text-content">
+                                                    <h4>Mi mayor reto</h4>
+                                                    <!-- <span>Febrero 2023 - Agosto 2021</span> -->
+                                                    <p>Dentro de Urbano uno de los mayores retos que he tenido ha sido la resolución de problemas de seguridad en las aplicaciones web, las validaciones e incompatibilidades.
+                                                    <br>Al ser aplicaciones grandes y heredadas contenian problemas de seguridad, al realizar auditorías variós de sus clientes como <b>Banco Pichincha</b> nos enviáron informes detallando los problemas. Podría parecer sencillo pero al ser aplicaciones grandes toco buscar para cada problema una solución que no dañe ninguna otra parte del sistema, para lo que primero se hizo una migración general del sistema y versiones de librerías, resolvimos los errores por la migración y de ahi continuamos. Segundo analizamos el problema junto con como esta realizada esa parte del sistema para poder hayar una solución ya sea validaciones por middleware, validaciones personalizadas para cada servicio, validaciones por configuraciones del servidor o incluso una migración completa de ese módulo.
+                                                    <br>Fue un trabajo largo y con presión ya que los bancos querían soluciones inmediatas, pero finalmente se resolvió de manera exitosa.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/geeks.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Geeks Ecuador</h4>
+                                                    <h4>Desarrollador Backend</h4>
+                                                    <span>Agosto 2021 - Febrero - 2023</span>
+                                                    <p>Dentro de geeks ecuador fui manteniendo varios roles. Al inicio realizaba <b>landing pages</b> y módulos como cotizadores, etc.
+                                                    <br>Luego pase a realizar servicios en <b>NodeJS (Backend)</b> como por ejemplo, una API de logueo de usuarios descentralizada, es decir que podian iniciar sesión desde cualquier aplicación con cualquier tipo de datos que envien, y la api registraba cualquier dato extra que se necesite, por lo que se realizo con una base de datos <b>MongoDB</b>.
+                                                    <br>Así mismo realice APIs para procesar facturas e ir añadiendo puntos según las compras realizadas, etc.
+                                                    <br>También realice proyectos completos como un <b>Backend</b> completo para una app movil sobre venta de respuestos de autos, el cual se hizo en <b>Laravel</b>.
+                                                    <br>Así ibamos realizando proyectos, un ejemplo más sería un proyecto para <b>Cruz Azul</b> el cual era una aplicación para realizar pronósticos del mundial Qatar 2022. Fue realizado <b>Frontend y Backend en Laravel.</b> Contaba de dos fases que se activaban de forma automática según una fecha, nosotros consumiamos una api de ellos para obtener los puntos por usuarios y según esos puntos podian realizar pronósticos.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Tecnologías usadas</h4>
+                                                    <p>En geeks realizabamos más proyectos dirigidos a clientes, los contruiamos desde cero y utilizando las mejores tecnologías según el proyecto. Entre ellas usabamos <b>PHP, Laravel, MySQL, NodeJS y MongoDB</b></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="content-section">
+                <div id="contact-content">
+                    <div class="section-heading">
+                        <h1>Cont<em>acto</em></h1>
+                        <p>¡Contáctame! - <b>Correo: </b>davidrsmk144@gmail.com 
+                        <br>
+                            <a href="https://www.linkedin.com/in/david-ruiz-a527a01bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="font-size: 25px;margin-right: 5px;"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/Sennt03" target="_blank" style="font-size: 25px;margin-right: 5px;"><i class="fa fa-github"></i></a>
+                            <a href="mailto:davidrsmk144@gmail.com" target="_blank" style="font-size: 23px;margin-right: 5px;"><i class="fa fa-envelope"></i></a>
+                            <a href="https://wa.me/593992959886" target="_blank" style="font-size: 20px;"><i class="fa fa-whatsapp" style="font-size: 25px;"></i> +593 992959886</a>
+                        </p>
+                        
+                    </div>
+                    <div class="section-content">
+                        <form id="contact" action="https://formsubmit.co/davidrsmk144@gmail.com" method="POST" target="_blank">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Tu nombre..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Email..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="_subject" type="text" class="form-control" id="subject" placeholder="Asunto..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tu mensaje..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Enviar Mensaje</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <p>Copyright &copy; 2024 David Ruiz 
+                - Ecuador</p>
+            </section>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
     <script>
-        document.getElementById('copy').innerHTML = `David Ruiz &copy; ${new Date().getFullYear()}`
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
     </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
 </body>
 </html>
