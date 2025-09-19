@@ -588,7 +588,7 @@ header {
 #featured .item .text-content h4 span {
   margin-top: 0px;
   margin-bottom: 5px;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
   color: #232323;
   letter-spacing: 0.5px;
@@ -598,8 +598,8 @@ header {
   color: #45489a;
 }
 
-#featured .item .text-content h4 .icons {
-  font-size: 20px;
+#featured .item .text-content .icons {
+  font-size: 17px;
 }
 
 #featured .item .text-content span {
